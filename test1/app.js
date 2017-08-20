@@ -62,6 +62,7 @@ function showMovieList(res){
 function addNewMovie(req,res){
     var form = formidable.IncomingForm();
     form.uploadDir = uploadDir;
+    form.keepExtensions = true;
 
     form.parse(req, function(err, fields, files){
         var title = fields.title;
@@ -74,6 +75,7 @@ function addNewMovie(req,res){
         var ext = pathUtil.parse(poster.name).ext;
         var newPath = imageDir + newPosterName + ext;
 
+        /*
         fs.renameSync(poster.path, newPath);
 
         var url = 'image/' + newPosterName + ext;
@@ -82,6 +84,7 @@ function addNewMovie(req,res){
         }
         movieList.push(info);
 
+        */
         //PRG pattern
         res.statusCode = 302;
         res.setHeader('Location', '.');
