@@ -1,0 +1,20 @@
+[
+    {
+        "title" : "고양이1",
+        "director" : "설진영",
+        "year" : 2017,
+        "poster" : "/image/cat.jpg"
+    },
+    {
+        "title" : "고양이2",
+        "director" : "설진영",
+        "year" : 2017,
+        "poster" : "/image/cat.jpg"
+    },
+    {
+        "title" : "고양이3",
+        "director" : "설진영",
+        "year" : 2017,
+        "poster" : "/image/cat.jpg"
+    }
+]
